@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Pogo Flash Game with Ruffle</title>
+
+    <!-- Include Ruffle.js (from the same directory or CDN) -->
+    <script src="ruffle.js"></script>
+</head>
+<body>
+    <h1>Play Pogo Flash Game</h1>
+    
+    <!-- Container where the game will be loaded -->
+    <div id="flash-container" style="width: 800px; height: 600px;"></div>
+
+    <script>
+        // Initialize Ruffle Player
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+
+        // Add the Ruffle player to the container
+        document.getElementById("flash-container").appendChild(player);
+
+        // Load your SWF file (change path if needed)
+        player.load("pogo.swf");  // This should be the correct path to your SWF file
+    </script>
+</body>
+</html>
