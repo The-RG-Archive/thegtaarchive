@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Grand Theft Auto</title>
+  <script src="./__utm.js" type="text/javascript"></script> <!-- Ensure this file exists locally or remove if unnecessary -->
+  <script language="JavaScript">
+    var theyCameFromBehind=true;
+    var frameThere=true;
+
+    function killGTA() {
+      if (theyCameFromBehind) window.top.location.href="/";
+      else self.close();
+    }
+
+    function haveGotPlugin(plugin) {
+      if (navigator.appName == "Microsoft Internet Explorer") return true;
+      else if (navigator.plugins && navigator.plugins[plugin] != null) return true;
+      return false;
+    }
+
+    var hasShockwaveFlash2=haveGotPlugin("Shockwave Flash 2.0");
+    var hasQuickTime=haveGotPlugin("QuickTime Plug-In");
+    var hasCosmoPlayer1=haveGotPlugin("Cosmo Player 1.0");
+    var hasShockwave=haveGotPlugin("Shockwave/Director");
+  </script>
+</head>
+
+<frameset rows="100%,1" border="0" framespacing="0" frameborder="no">
+  <frame src="./areyou18.html" name="gta_content" scrolling="AUTO" noresize framespacing="0" marginwidth="0" marginheight="0" frameborder="0" border="0">
+  <frame src="./black.html" scrolling="NO" noresize framespacing="0" marginwidth="0" marginheight="0" frameborder="0" border="0">
+</frameset>
+
+</html>
