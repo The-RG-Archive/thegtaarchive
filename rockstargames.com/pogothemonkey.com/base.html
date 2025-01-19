@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <title>Pogo The Monkey</title>
+<html lang="en">
+</head><body bgcolor="#3B709B" marginheight="0" marginwidth="0" leftmargin="0" topmargin="0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<frameset rows="0,600,0" framespacing="0" frameborder="NO" border="0">
+	<frame name="hidden" src="./Pogo The Monkey_files/empty.html" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="NO" data-ruffle-polyfilled="">
+
+		<frameset cols="0,600,0" framespacing="0" frameborder="NO" border="0">
+			<frame name="hidden" src="./Pogo The Monkey_files/empty(1).html" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="NO" data-ruffle-polyfilled="">
+			<frame name="top" src="./Pogo The Monkey_files/base0.html" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="NO" data-ruffle-polyfilled="">
+			<frame name="hidden" src="./Pogo The Monkey_files/empty(2).html" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="NO" data-ruffle-polyfilled="">
+		</frameset>
+	
+	<frame name="hidden" src="./Pogo The Monkey_files/empty(3).html" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="NO" data-ruffle-polyfilled="">
+</frameset>
+
+
+    <!-- Include Ruffle.js (from the same directory or CDN) -->
+    <script src="Ruffle/ruffle.js"></script>
+</head>
+<body>
+    <!-- Container where the game will be loaded -->
+<center>
+    <div id="flash-container" style="width: 500px; height: 600px; background-color: #3B709B;"></div>
+</center>
+    <script>
+        // Initialize Ruffle Player
+        const ruffle = window.RufflePlayer.newest();
+        const player = ruffle.createPlayer();
+
+        // Add the Ruffle player to the container
+        document.getElementById("flash-container").appendChild(player);
+
+        // Load your SWF file (change path if needed)
+        player.load("pogo.swf");  // This should be the correct path to your SWF file
+    </script>
+</center>
+</body>
+</html>
